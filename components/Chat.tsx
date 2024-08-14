@@ -14,7 +14,7 @@ const handleToolCall: ToolCallHandler = async (
 ): Promise<ToolResponse | ToolError> => {
   console.log("Tool call received", toolCall);
 
-  if (toolCall.name === 'virtual_therapist') {
+  if (toolCall.name === 'sky_companion') {
     try {
       // Parse the parameters if needed
       const args = JSON.parse(toolCall.parameters) as {
@@ -23,7 +23,7 @@ const handleToolCall: ToolCallHandler = async (
 
       // Example of a possible interaction
       // Customize this as per the requirements of the virtual therapist
-      const responseContent = "Yuri says: I understand you're feeling ${args.prompt}, let's talk more about it.";
+      const responseContent = "Sky says: I understand you're feeling ${args.prompt}, let's talk more about it.";
 
       return {
         type: 'tool_response',
@@ -34,10 +34,10 @@ const handleToolCall: ToolCallHandler = async (
       return {
         type: 'tool_error',
         tool_call_id: toolCall.tool_call_id,
-        error: 'Virtual therapist tool error',
-        code: 'virtual_therapist_error',
+        error: 'sky_companion tool error',
+        code: 'sky_companion_error',
         level: 'warn',
-        content: 'There was an error with the virtual therapist tool',
+        content: 'There was an error with the sky_companion tool',
       };
     }
   } else {
@@ -67,7 +67,7 @@ export default function ClientComponent({
       }
     >
       <VoiceProvider
-        configId={process.env.NEXT_PUBLIC_YURI_TEST_CONFIG_CONFIG_ID}
+        configId={process.env.NEXT_PUBLIC_SKY_SUKOON_CONFIG_ID}
         auth={{ type: "accessToken", value: accessToken }}
         onToolCall={handleToolCall}
         onMessage={() => {
