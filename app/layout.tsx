@@ -6,7 +6,7 @@ import { Nav } from "@/components/Nav";
 import { cn } from "@/utils";
 
 export const metadata: Metadata = {
-  title: "Vaani by Sukoon",
+  title: "Ray by Sukoon",
   //description: "",
 };
 
