@@ -10,7 +10,7 @@ export default function HumeLogo(props: HumeLogoProps) {
 
   return (
   <>
-    <b><h1>Vaani</h1></b>
+    <b><h1>Sky</h1></b>
     <i><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by Sukoon</p></i>
   </>
   );
