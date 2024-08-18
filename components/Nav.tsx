@@ -28,11 +28,11 @@ export const Nav = () => {
   return (
     <div
       className={
-        "px-4 py-2 flex items-center h-30 z-50 bg-card border-b border-border"
+        "flex items-center h-20 z-50 bg-card border-b border-border"
       }
     >
       <div>
-        <HumeLogo className={"h-10 w-auto"} />
+        <HumeLogo  />
       </div>
       <div className={"ml-auto flex items-center gap-1"}>
         <Button
