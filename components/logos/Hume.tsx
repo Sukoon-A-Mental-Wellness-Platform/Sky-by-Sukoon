@@ -10,8 +10,7 @@ export default function HumeLogo(props: HumeLogoProps) {
 
   return (
   <>
-    <b><h1>Sky</h1></b>
-    <i><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by Sukoon</p></i>
+  <img src="/logo1.png" alt="logo" className="ml-7 md:-ml-52 scale-125 md:mt-3 md:scale-[.5]"/>
   </>
   );
 }
