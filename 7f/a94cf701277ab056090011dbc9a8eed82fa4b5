@@ -1,0 +1,19 @@
+sync-check2.txt
+  s_f025361208c3fc::t_18abc4d8f45d62 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7fa94cf701277ab056090011dbc9a8eed82fa4b5",
+  "prompts": {},
+  "sessions": {
+    "s_f025361208c3fc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11bf6bc4-06a1-4f99-9544-162b38e7e812",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Anamika Aggarwal <anamikaagg18@gmail.com>"
+    }
+  }
+}
